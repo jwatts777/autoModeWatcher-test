@@ -1,9 +1,8 @@
 <script lang="ts">
-	import '../app.postcss';
-	import { AppShell, AppBar, setInitialClassState } from '@skeletonlabs/skeleton';
-	import { autoModeWatcher } from '@skeletonlabs/skeleton';
-	import { modeOsPrefers, modeUserPrefers, modeCurrent } from '@skeletonlabs/skeleton';
-	setInitialClassState();
+import '../app.postcss';
+	import { AppShell, AppBar} from '@skeletonlabs/skeleton';
+	import { autoModeWatcher} from '@skeletonlabs/skeleton';
+	import { modeOsPrefers, modeUserPrefers, modeCurrent} from '@skeletonlabs/skeleton';
 </script>
 
 <!-- App Shell -->
@@ -16,9 +15,7 @@
 				<strong class="text-xl uppercase">Skeleton</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<div>{$modeOsPrefers ? "Light" : "Dark"}</div>
-				<div>{$modeUserPrefers ? "Light" : "Dark"}</div>
-				<div>{$modeCurrent}</div>
+			
 				<a
 					class="btn btn-sm variant-ghost-surface"
 					href="https://discord.gg/EXqV7W8MtY"
@@ -43,7 +40,6 @@
 				>
 					GitHub
 				</a>
-				<div class=' btn variant-filled-primary' on:click={() => autoModeWatcher()}></div>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
