@@ -19,15 +19,7 @@
 		</figure>
 		<!-- / -->
 		<div class="flex justify-center space-x-2">
-			<a
-				class="btn variant-filled"
-				href="https://skeleton.dev/"
-				target="_blank"
-				rel="noreferrer"
-			>
-				Launch Documentation
-			</a>
-			<div class="btn variant-filled">Light</div><div class="btn variant-filled">Dark</div>
+			<div class="btn bg-orange-500 dark:bg-blue-500">Is Blue on dark, Orange on light</div>
 		</div>
 		<div class="space-y-2">
 			<p>Try editing the following:</p>
