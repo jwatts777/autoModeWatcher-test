@@ -19,7 +19,8 @@
 		</figure>
 		<!-- / -->
 		<div class="flex justify-center space-x-2">
-			<div class="btn bg-orange-500 dark:bg-blue-500">Is Blue on dark, Orange on light</div>
+			<a class="btn bg-orange-500 dark:bg-blue-500" href='/testNewPage'>Is Blue on dark, Orange on light.
+			Click to show different page proof.</a>
 		</div>
 		<div class="space-y-2">
 			<p>Try editing the following:</p>

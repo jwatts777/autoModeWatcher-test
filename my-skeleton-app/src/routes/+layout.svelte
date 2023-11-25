@@ -1,12 +1,24 @@
+
+
 <script lang="ts">
+  import { browser } from '$app/environment';
+  import { onMount } from 'svelte';
 import '../app.postcss';
 	import { AppShell, AppBar} from '@skeletonlabs/skeleton';
-	import { autoModeWatcher} from '@skeletonlabs/skeleton';
-	import { modeOsPrefers, modeUserPrefers, modeCurrent} from '@skeletonlabs/skeleton';
+	import { autoModeWatcher } from '@skeletonlabs/skeleton';
+
+	onMount(() => {
+		autoModeWatcher.toString()
+		autoModeWatcher();
+	})
 </script>
 
-<!-- App Shell -->
-<svelte:head>{@html `<script>${autoModeWatcher.toString()} autoModeWatcher();</script>`}</svelte:head>
+<!-- <svelte:head>{@html `<script type="module">
+    ${autoModeWatcher.toString()}
+    autoModeWatcher();
+  </script>`}</svelte:head> -->
+
+
 <AppShell>
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
