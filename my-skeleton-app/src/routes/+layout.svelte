@@ -6,17 +6,23 @@
 import '../app.postcss';
 	import { AppShell, AppBar} from '@skeletonlabs/skeleton';
 	import { autoModeWatcher } from '@skeletonlabs/skeleton';
+	// import { LightSwitch } from '@skeletonlabs/skeleton';
 
 	onMount(() => {
 		autoModeWatcher.toString()
 		autoModeWatcher();
 	})
+	
 </script>
 
 <!-- <svelte:head>{@html `<script type="module">
     ${autoModeWatcher.toString()}
     autoModeWatcher();
   </script>`}</svelte:head> -->
+<!-- <svelte:head>
+	{@html `<\u{73}cript nonce="%sveltekit.nonce%">${autoModeWatcher.toString()}
+    autoModeWatcher();</script>`}
+</svelte:head> -->
 
 
 <AppShell>
